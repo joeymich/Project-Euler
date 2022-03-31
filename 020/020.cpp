@@ -13,12 +13,11 @@ void multiply(vector<unsigned int>& v, unsigned int n)
         c = p / 10;
         *rit = p % 10;
     }
-    if (c > 0)
-        while (c > 0)
-        {
-            v.insert(v.begin(), c % 10);
-            c /= 10;
-        }
+    while (c > 0)
+    {
+        v.insert(v.begin(), c % 10);
+        c /= 10;
+    }
 }
 
 int main()
