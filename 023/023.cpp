@@ -12,10 +12,8 @@ unsigned int d(unsigned int a)
         {
             if (a / i == i)
                 sum += i;
-            else{
-                sum += i;
-                sum += a / i;
-            }
+            else
+                sum += i + a / i;
         }
     sum -= a;
     return sum;
