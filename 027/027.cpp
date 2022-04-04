@@ -1,4 +1,4 @@
-// Problem 26 -- Reciprocal cycles
+// Problem 27 -- Quadratic primes
 #include <iostream>
 #include <cmath>
 using namespace std;
