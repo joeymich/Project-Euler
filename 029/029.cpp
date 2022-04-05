@@ -10,7 +10,6 @@ int main()
 {
     set<vector<unsigned int>> s;
     for (unsigned int i = 2; i <= 100; i++)
-    {
         for (unsigned int j = 2; j <= 100; j++)
         {
             vector<unsigned int> temp = {1};
@@ -18,7 +17,6 @@ int main()
                 multiply(temp, i);
             s.insert(temp);
         }
-    }
     cout << s.size() << "\n";
     return 0;
 }
