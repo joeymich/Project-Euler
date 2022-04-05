@@ -4,10 +4,9 @@ using namespace std;
 
 int main()
 {
-    unsigned int count = 0;
     unsigned int i = 2;
     unsigned int sum = 0;
-    while(count < 6){
+    while(i < 1000000){
         unsigned int a = i;
         unsigned int temp = 0;
         while (a != 0)
@@ -17,10 +16,7 @@ int main()
             temp += b * b * b * b * b;
         }
         if (i == temp)
-        {
-            count++;
             sum += i;
-        }
         i++;
     }
     cout << sum << "\n";
